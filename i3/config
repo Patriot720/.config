@@ -194,7 +194,7 @@ mode "resize" {
 #Auth agent
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #Bg
-exec_always feh --bg-fill /mnt/Home/home/11-1.jpg
+exec_always feh --bg-fill ~/.config/i3/bg/11-1.jpg
 #Guake
 exec --no-startup-id guake
 #Language switch
@@ -248,6 +248,7 @@ bindsym $mod+Shift+l exec i3lock & sleep 5 && xset dpms force off
 
 
 
+
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
@@ -257,7 +258,7 @@ for_window [urgent=latest] focus
 #
 bar {
 font pango:Inconsolata 10
-	tray_output none
+	# tray_output none
 	status_command bumblebee-status -m time nic \
 		battery layout  pasink pasource \
 		-p root.path=/ time.format=" %H:%M, %A, %d, %b %Y " date.format="%a, %b %d %Y" \
