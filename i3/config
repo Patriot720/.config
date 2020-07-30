@@ -17,6 +17,17 @@ default_floating_border normal
 # Hide borders
 hide_edge_borders none
 
+# #---Dropdown Windows---# #
+# General dropdown window traits. The order can matter.
+for_window [instance="dropdown_*"] floating enable
+for_window [instance="dropdown_*"] move scratchpad
+for_window [instance="dropdown_*"] sticky enable
+for_window [instance="dropdown_*"] scratchpad show
+for_window [instance="dropdown_tmuxdd"] resize set 625 450
+for_window [instance="dropdown_dropdowncalc"] resize set 800 300
+for_window [instance="dropdown_tmuxdd"] border pixel 3
+for_window [instance="dropdown_dropdowncalc"] border pixel 2
+for_window [instance="dropdown_*"] move position center
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -123,7 +134,7 @@ set $ws10 "10: Spotify and Telegram"
 set $monitor_1 DisplayPort-0
 set $monitor_2 DVI-D-0
 
-workspace $ws1 output $montior_1
+workspace $ws1 output $monitor_1
 workspace $ws2 output $monitor_1
 workspace $ws10 output $monitor_2
 workspace $ws9 output $monitor_2
