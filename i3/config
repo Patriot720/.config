@@ -47,6 +47,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+x kill
+
 mouse_warping none
 
 # start dmenu (a program launcher)
@@ -124,9 +125,9 @@ set $monitor_1 DisplayPort-0
 set $monitor_2 DVI-D-0
 
 workspace $ws1 output $montior_1
+workspace $ws2 output $monitor_1
 workspace $ws10 output $monitor_2
 workspace $ws9 output $monitor_2
-workspace $ws2 output $monitor_1
 
 
 # switch to workspace
