@@ -15,7 +15,7 @@ exec_always picom --experimental-backends --config ~/.config/picom/picom.conf -b
 set $mod Mod4
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 3
+default_border pixel 4
 default_floating_border normal
 
 # Hide borders
@@ -232,6 +232,7 @@ exec --no-startup-id setxkbmap us,ru -option 'grp:alt_shift_toggle'
 # Mouse acceleration
 # Find mouse automatically
 exec --no-startup-id xinput --set-prop 12 'libinput Accel Profile Enabled' 0, 1
+exec --no-startup-id xinput --set-prop 13 'libinput Accel Profile Enabled' 0, 1
 #Other
 exec spotify
 exec telegram-desktop
