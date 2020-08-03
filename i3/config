@@ -141,7 +141,7 @@ set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8"
+set $ws8 "8: Discord"
 set $ws9 "9: Other stuff Monitor2"
 set $ws10 "10: Spotify and Telegram"
 
@@ -152,6 +152,7 @@ workspace $ws1 output $monitor_1
 workspace $ws2 output $monitor_1
 workspace $ws10 output $monitor_2
 workspace $ws9 output $monitor_2
+workspace $ws8 output $monitor_2
 
 
 # switch to workspace
@@ -247,6 +248,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 for_window [class="Spotify"] move to workspace $ws10
 assign [class="TelegramDesktop"] $ws10
+assign [class="discord"] $ws8
 
 #Dont forget to install these for them to work
 # bindsym $mod+p exec --no-startup-id ulauncher
