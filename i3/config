@@ -15,11 +15,11 @@ exec_always picom --experimental-backends --config ~/.config/picom/picom.conf -b
 set $mod Mod4
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border pixel 3
 default_floating_border normal
 
 # Hide borders
-hide_edge_borders none
+hide_edge_borders smart
 
 # xprop
 # #---Dropdown Windows---# #
