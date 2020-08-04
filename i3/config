@@ -219,6 +219,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+# client.focused #ffffff #ffffff #ffffff #ffffff   #ffffff
 
 #Autoload
 #Auth agent
